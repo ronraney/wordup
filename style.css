@@ -1,0 +1,203 @@
+/*
+Theme Name: WordUp
+Author: Ron Raney
+Description: Bootstrap Offcanvas template converted to WordPress
+Version: Now
+Tags: bootstrap
+*/
+html {
+    min-width: 350px;
+}
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 56px;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    background-color: var(--gray-dark);
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .offcanvas-collapse.open {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem); /* Account for horizontal padding on navbar */
+  }
+}
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+  margin-top: 15px;
+}
+
+.nav-scroller .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: var(--secondary);
+}
+
+.nav-underline .nav-link:hover {
+  color: var(--blue);
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: var(--gray-dark);
+}
+.navbar-brand {
+	font-family: 'Merriweather', serif;
+}
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: var(--purple); }
+
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
+
+
+/*Author Styles*/
+
+/*Custom Color Styles*/
+
+.bg-1 {
+    background-color: #233238;
+    color: white;
+}
+.text-1 {
+    color: #28A745;
+}
+
+a {
+    color: #8B4310;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: #17A2B8;
+}
+.jumbotron hr {
+    background-color: #aaa;
+}
+/*Pager*/
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+/*Home Page*/
+
+.parallax-container {
+  position: relative;
+  height: 250px;
+}
+.parallax-container-2 {
+  position: relative;
+  height: 250px;
+}
+.parallax {
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  z-index: -1;
+}
+.content {
+  background: #fff;
+}
+
+/*Cards-Posts*/
+.card-body img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 150px;
+    height: auto;
+}
+/*Page*/
+.page {
+    margin-left: 5%;
+}
+.blog-post-single .blog-post .card-body img {
+    width: 95%;
+    max-width: 550px;
+    height: auto;
+    margin: 2em 2em 2em auto;
+    border: 2px ridge #000;
+}
+.featured-page-img {
+	height: 450px;
+	width: auto;
+}
+/*Bootstrap Media Object*/
+.media {
+
+}
+.media img {
+	width: 350px;
+}
+.media-body {
+    margin: 1em auto auto 1em;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    padding: 25px 0px 15px 0px;
+    background-color: #233238;
+    color: white;
+}
+
+
+@media (max-width: 768px) { 
+
+        .nav-tabs .nav-item .nav-link{
+            font-size: .7em;
+        }
+    }
+ }
